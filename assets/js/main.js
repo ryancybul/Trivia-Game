@@ -24,7 +24,38 @@ $(document).ready(function() {
             "answer": ["Coffee warmer", "Golden shovel", "Waterproof shoes", "Silent draperunners"],
             "correctAnswer": "Silent draperunners"
         },
+        {
+            "question": "What’s the population of Twin Peaks?",
+            "answer": ["63,982", "58,016", "55,245", "51,201"],
+            "correctAnswer": "51,201"
+        },
+        {
+            "question": "How many children does Benjamin Horne actually have?",
+            "answer": ["Leland Palmer", "Hank Jennings", "Blackie O'Reilly", "Ed Hurley"],
+            "correctAnswer": "Silent draperunners"
+        },
+        {
+            "question": "Who runs One-Eyed Jack's?",
+            "answer": ["Leland Palmer", "Hank Jennings", "Blackie O'Reilly", "Ed Hurley"],
+            "correctAnswer": "Blackie O'Reilly"
+        },
+        {
+            "question": "Who fakes his own death?",
+            "answer": ["Benjamin Horne", "Leland Palmer", "Hank Jennings", "Andrew Packard"],
+            "correctAnswer": "Andrew Packard"
+        },
+        {
+            "question": "What’s the name of Laura Palmer’s identical cousin?",
+            "answer": ["Amanda Palmer", "Maddy Palmer", "Amanda Freguson", "Maddy Ferguson"],
+            "correctAnswer": "Maddy Ferguson"
+        },
+        {
+            "question": "What’s the name of Laura’s psychiatrist??",
+            "answer": ["Dr. Jacobs", "Dr. Jacoby", "Dr. Filman", "Dr. Filban"],
+            "correctAnswer": "Dr. Jacoby"
+        }
     ]
+
     let correctAnswers = 0;
     let wrongAnswers = 0;
     let unanswered = 0;
