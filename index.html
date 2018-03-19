@@ -5,23 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Triva Game!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/main.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-    <h1><span class="js-title"></span></h1>
+
+
+
+<div class="contentBox">
+
+    <img src='./assets/images/logo.png' id='logo'>
+
+    <!-- Title -->
+    <h1><span class="js-title title twin-peaks"></span></h1>
 
     <!-- Timer Div -->
-    <div class="js-timer"></div>
+    <div class="js-timer title"></div>
 
-    <button class="js-button"></button>
+    <button class="js-button button"></button>
     
     <!-- Questions will populate here -->
     <div class="js-questions"></div>
 
+    <!--Results will be displayed here-->
+    <div class="js-results"></div>
+
     <!-- Stop the game -->
-    <button class="js-stop">Stop the game.</button>
+    <button class="js-stop button">Submit</button>
+</div>
 
 <script src="./assets/js/main.js"></script>
+
 </body>
 </html>
