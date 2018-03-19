@@ -22,9 +22,8 @@ $(document).ready(function() {
         {
             "question": "What device does Nadine invent?",
             "answer": ["Coffee warmer", "Golden shovel", "Waterproof shoes", "Silent draperunners"],
-            "correctAnswer": "Double R"
+            "correctAnswer": "Silent draperunners"
         },
-        
     ]
     let correctAnswers = 0;
     let wrongAnswers = 0;
@@ -57,18 +56,20 @@ $(document).ready(function() {
     }
 
     function stopGame() {
-        $('.js-questions input:checked').each(function() {
+        $('input:checked').each(function() {
             //if value = correct question answer add 1 to score
             let answerChecked = $(this).val();
-            for (let i=0; i < questions.length; i++) {
                 if (answerChecked === questions[$(this).attr('name')].correctAnswer) {
                     correctAnswers++;
+                    console.log(correctAnswers);
                 } 
                 else {
                     wrongAnswers++;
                 }
-            }
         });
+
+        //Counts questions unanswered. 
+        unanswered = (questions.length) - correctAnswers - wrongAnswers;
 
         //Hide the questions, timer, and button. 
         $('.js-questions').hide();
@@ -76,8 +77,8 @@ $(document).ready(function() {
         $('.js-stop').hide();
 
         //Display the results
-        $('.js-results').append('<h2>' + 'Correct Answers: ' + (correctAnswers / 4) + '</h2>');
-        $('.js-results').append('<h2>' + 'Wrong Answers: ' + (wrongAnswers / 4) + '</h2>');
+        $('.js-results').append('<h2>' + 'Correct Answers: ' + (correctAnswers) + '</h2>');
+        $('.js-results').append('<h2>' + 'Wrong Answers: ' + (wrongAnswers) + '</h2>');
         $('.js-results').append('<h2>' + 'Unanswered: ' + unanswered  + '</h2>');
     }
 
