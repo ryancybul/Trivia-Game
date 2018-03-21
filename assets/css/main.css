@@ -36,7 +36,8 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Amatic SC', cursive;
-    font-size: 20px;
+    font-size: 1.5rem; 
+    margin: 5px; 
 }
 
 .js-results {
@@ -44,27 +45,29 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Amatic SC', cursive;
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .js-timer {
     font-family: 'Amatic SC', cursive;
     font-size: 20px;
-    margin: 0%;
+    margin: 10px;
 }
 
 
-.twin-peaks {
-    font-family: Avant Garde, Avantgarde, Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-    font-size: 40px;
+.title {
+    font-family: 'Amatic SC', cursive;
+    font-size: 2.5rem;
     font-weight: bold;
-    color: #644647;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 0 forestgreen, -1px -1px 0 forestgreen, 1px -1px 0 forestgreen, -1px 1px 0 forestgreen, 0px 1px 0 forestgreen, 1px 0px 0 forestgreen, 0px -1px 0 forestgreen, -1px 0px 0 forestgreen, 2px 1px 0 #333;
 }
 
 #logo {
     width: 75%;
     margin: 0px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 20px;
 }

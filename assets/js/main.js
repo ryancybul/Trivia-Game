@@ -31,8 +31,8 @@ $(document).ready(function() {
         },
         {
             "question": "How many children does Benjamin Horne actually have?",
-            "answer": ["Leland Palmer", "Hank Jennings", "Blackie O'Reilly", "Ed Hurley"],
-            "correctAnswer": "Silent draperunners"
+            "answer": ["1", "2", "3", "4"],
+            "correctAnswer": "3"
         },
         {
             "question": "Who runs One-Eyed Jack's?",
@@ -59,7 +59,7 @@ $(document).ready(function() {
     let correctAnswers = 0;
     let wrongAnswers = 0;
     let unanswered = 0;
-    let timerCount = 30;
+    let timerCount = 60;
     let intervalId; 
 
     //Functions
