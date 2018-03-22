@@ -76,14 +76,22 @@ $(document).ready(function() {
         $('.js-title').hide();
         $('.js-timer').show();
 
-        //populate questions div
-        for (var i = 0; i < questions.length; i++) {
-            $('.js-questions').append('<h2>' + questions[i].question + '</h2>');
-            for (var j=0; j < questions[i].answer.length; j++){
-                $('.js-questions').append('<input type ="radio" value="' + questions[i].answer[j] + '", name="' + i + '">' + " " + questions[i].answer[j] + " " + '</input>');
-                }
-                $('.js-questions').append('</br>');
+    //populate questions div
+
+
+    
+    for (var i = 0; i < questions.length; i++) {
+        $('.js-questions').append('<h2>' + questions[i].question + '</h2>');
+
+        let answerDiv = $('<div>');
+        answerDiv.addClass('js-answerDiv'+[i]).addClass('aDiv');
+        $('.js-questions').append(answerDiv);
+
+        for (var j=0; j < questions[i].answer.length; j++){
+            $('.js-answerDiv'+[i]).append('<input type ="radio" value="' + questions[i].answer[j] + '", name="' + i + '">' + "  " + questions[i].answer[j] + "  " + '</input>');
             }
+            $('.js-questions').append('</br>');
+        }
     }
 
     function stopGame() {
